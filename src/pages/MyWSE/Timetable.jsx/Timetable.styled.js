@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-import { TimetableBtnIcon } from '../MyWSKMPanel/MyWSKMPanel.styled';
+import styled from 'styled-components';
+import { TimetableBtnIcon } from '../MyWSEPanel/MyWSEPanel.styled';
 
 export const TimetableBox = styled.div`
   position: absolute;
@@ -106,25 +106,9 @@ export const TimetableSpeakings = styled.div`
   }
 `;
 
-export const pulse = keyframes`
-  0%{
-    transform: scale(0.9);
-  }
-  100%{
-    transform: scale(1.1);
-  }
-`;
-
 export const TimetableLessonType = styled.span`
   display: block;
   font-size: 18px;
-  color: var(--main-color);
-
-  filter: drop-shadow(1px -1px 1px var(--main-color));
-
-  &.animated {
-    animation: ${pulse} 500ms 5 ease-in-out alternate;
-  }
 `;
 
 export const TimetableChangeCourseBtn = styled.button`
@@ -193,12 +177,7 @@ export const TimetableLessonLink = styled.a`
   width: 110px;
   color: #fff;
   font-weight: 500;
-  background: linear-gradient(
-      322deg,
-      var(--main-color) 23.22%,
-      var(--secondary-color) 110.01%
-    ),
-    var(--secondary-color);
+  background: linear-gradient(90deg, #76c23c -31.6%, #000 107.95%);
 
   border-radius: 5px;
   overflow: hidden;
@@ -216,12 +195,7 @@ export const TimetableLessonLink = styled.a`
 
     transition: opacity var(--animation-global);
 
-    background: linear-gradient(
-        322deg,
-        var(--main-color) 23.22%,
-        var(--secondary-color) 110.01%
-      ),
-      var(--secondary-color);
+    background: linear-gradient(90deg, #000 -31.6%, #76c23c 107.95%);
   }
 
   &:hover,

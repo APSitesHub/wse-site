@@ -8,9 +8,9 @@ import {
   PanelHideRightSwitch,
   PanelHideSwitch,
   TimetableBtnIcon,
-} from './MyWSKMPanel.styled';
+} from './MyWSEPanel.styled';
 
-export const MyWSKMPanel = ({
+export const MyWSEPanel = ({
   user,
   language,
   timetable,

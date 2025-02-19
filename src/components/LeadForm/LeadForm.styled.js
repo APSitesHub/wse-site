@@ -216,12 +216,8 @@ export const FormBtn = styled.button`
   text-transform: uppercase;
   color: var(--secondary-color);
   border-radius: 50px;
-  background: linear-gradient(
-      322deg,
-      var(--main-color) 23.22%,
-      var(--secondary-color) 110.01%
-    ),
-    var(--secondary-color);
+  background: linear-gradient(90deg, #76C23C -31.6%, #000 107.95%);
+
   border: none;
   flex-shrink: 0;
   cursor: pointer;
@@ -246,12 +242,7 @@ export const FormBtn = styled.button`
 
     transition: opacity 350ms linear;
 
-    background: linear-gradient(
-        322deg,
-        var(--secondary-color) -5.61%,
-        var(--main-color) 93.88%
-      ),
-      var(--secondary-color);
+    background: linear-gradient(90deg, #000 -31.6%, #76C23C 107.95%);
   }
 
   &:hover,

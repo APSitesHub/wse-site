@@ -22,8 +22,8 @@ import {
   LoginErrorNote,
   PanelHideLeftSwitch,
   PanelHideRightSwitch,
-} from './MyWSKMPanel/MyWSKMPanel.styled';
-import { MyWSKMPanelPl } from './MyWSKMPanel/MyWSKMPanelPl';
+} from './MyWSEPanel/MyWSEPanel.styled';
+import { MyWSEPanelPl } from './MyWSEPanel/MyWSEPanelPl';
 
 const monthly = [
   { name: 'Adam Nowak', points: 327 },
@@ -180,7 +180,7 @@ const pltimetable = [
   },
 ];
 
-const MyWSKMPl = () => {
+const MyWSEPl = () => {
   const [isUserLogged, setIsUserLogged] = useState(false);
   const [lessons, setLessons] = useState(false);
   const [points, setPoints] = useState({});
@@ -207,7 +207,7 @@ const MyWSKMPl = () => {
   };
 
   useEffect(() => {
-    document.title = 'My WSKM | WSKM';
+    document.title = 'My WSE | WSE';
 
     const refreshToken = async () => {
       console.log('token refresher');
@@ -348,7 +348,7 @@ const MyWSKMPl = () => {
           validationSchema={loginSchema}
         >
           <LoginForm>
-            <LoginLogo src={logo} alt="WSKM logo" />
+            <LoginLogo src={logo} alt="WSE logo" />
             <LoginFormText>
               Dzień dobry!
               <br />
@@ -387,7 +387,7 @@ const MyWSKMPl = () => {
       ) : (
         <>
           {Object.values(points).length > 0 && (
-            <MyWSKMPanelPl
+            <MyWSEPanelPl
               lessons={lessons}
               user={user}
               points={points}
@@ -416,4 +416,4 @@ const MyWSKMPl = () => {
   );
 };
 
-export default MyWSKMPl;
+export default MyWSEPl;

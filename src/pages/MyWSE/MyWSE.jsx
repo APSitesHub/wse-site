@@ -17,10 +17,10 @@ import {
 import { useEffect, useState } from 'react';
 import * as yup from 'yup';
 import { MyPlatform } from './My Platform/MyPlatform';
-import { MyWSKMPanel } from './MyWSKMPanel/MyWSKMPanel';
-import { LoginErrorNote } from './MyWSKMPanel/MyWSKMPanel.styled';
+import { MyWSEPanel } from './MyWSEPanel/MyWSEPanel';
+import { LoginErrorNote } from './MyWSEPanel/MyWSEPanel.styled';
 
-const MyWSKM = () => {
+const MyWSE = () => {
   const [isUserLogged, setIsUserLogged] = useState(false);
   const [timetable, setTimetable] = useState({});
   const [user, setUser] = useState({});
@@ -32,7 +32,7 @@ const MyWSKM = () => {
   axios.defaults.baseURL = 'https://ap-server-8qi1.onrender.com';
 
   useEffect(() => {
-    document.title = 'My WSKM | WSKM';
+    document.title = 'My WSE | WSE';
 
     const refreshToken = async () => {
       console.log('token refresher');
@@ -118,7 +118,7 @@ const MyWSKM = () => {
           validationSchema={loginSchema}
         >
           <LoginForm>
-            <LoginLogo src={logo} alt="WSKM logo" />
+            <LoginLogo src={logo} alt="WSE logo" />
             <LoginFormText>
               <StreamAuthTextHello>Hello!</StreamAuthTextHello>
               Our website is not available without authorization. Please enter
@@ -154,7 +154,7 @@ const MyWSKM = () => {
         </Formik>
       ) : (
         <>
-          <MyWSKMPanel user={user} link={platformLink} timetable={timetable} />
+          <MyWSEPanel user={user} link={platformLink} timetable={timetable} />
           <MyPlatform platformLink={platformLink} />
         </>
       )}
@@ -162,4 +162,4 @@ const MyWSKM = () => {
   );
 };
 
-export default MyWSKM;
+export default MyWSE;

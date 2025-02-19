@@ -489,7 +489,7 @@ export const ChatPinnedMessageIcon = styled(PinnedMessageIcon)`
 export const ChatWindowedPinnedMessageIcon = styled(ChatPinnedMessageIcon)`
   top: 2px;
   right: 0;
-  fill: var(--accent-color);
+  fill: var(--main-color);
   transform: rotate(60deg);
   transition: transform var(--animation-global);
 
@@ -506,11 +506,11 @@ export const ChatDeleteMessage = styled(DeleteUserMessageIcon)`
   width: 16px;
   height: 16px;
 
-  color: #f9c8389e;
+  color: #80000085;
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: #800000;
   }
 `;
 
@@ -522,11 +522,11 @@ export const ChatWindowedDeleteMessage = styled(DeleteMessageIcon)`
   width: 22px;
   height: 22px;
 
-  fill: #f9c8389e;
+  fill: #80000085;
 
   &:hover,
   &:focus {
-    fill: var(--accent-color);
+    fill: #800000;
   }
 `;
 

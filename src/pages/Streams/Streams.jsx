@@ -5,7 +5,7 @@ import { Loader } from 'components/SharedLayout/Loaders/Loader';
 import { LoaderWrapper } from 'components/SharedLayout/Loaders/Loader.styled';
 import { Formik } from 'formik';
 import { nanoid } from 'nanoid';
-import { LoginErrorNote } from 'pages/MyWSKM/MyWSKMPanel/MyWSKMPanel.styled';
+import { LoginErrorNote } from 'pages/MyWSE/MyWSEPanel/MyWSEPanel.styled';
 import { useEffect, useLayoutEffect, useState } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import * as yup from 'yup';
@@ -147,7 +147,7 @@ const Streams = () => {
             validationSchema={loginSchema}
           >
             <LoginForm>
-              <LoginLogo src={logo} alt="WSKM logo" />
+              <LoginLogo src={logo} alt="WSE logo" />
               <LoginFormText>
                 <StreamAuthTextHello>Hello!</StreamAuthTextHello>
                 Our website is not available without authorization. Please enter
