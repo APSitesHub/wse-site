@@ -371,15 +371,15 @@ export const LoginFormText = styled.p`
 
 export const LoginLogo = styled.img`
   display: block;
-  width: 160px;
+  width: 120px;
   height: auto;
 
   @media screen and (min-width: 768px) {
-    width: 240px;
+    width: 160px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 320px;
+    width: 200px;
   }
 `;
 
